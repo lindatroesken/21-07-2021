@@ -6,8 +6,9 @@ public class WaterCar extends Car{
 
     @Override
     public String drive() {
-        //super.drive();
-        String driveInfo = "Fährt auch im Wasser!";
-        return driveInfo;
+        String parentDriveInfo = super.drive();
+        String driveInfo = " und fährt auch im Wasser!";
+        String allInfo = parentDriveInfo + driveInfo;
+        return allInfo;
     }
 }

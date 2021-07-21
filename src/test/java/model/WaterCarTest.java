@@ -4,27 +4,28 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class CarTest {
-
+class WaterCarTest {
     @Test
-    public void testDriveCarClass() {
+    public void testDriveWaterCarClass() {
         //GIVEN
-        Car testCar = new Car();
+        WaterCar testCar = new WaterCar();
         //WHEN
         String actual = testCar.drive();
         //THEN
-        String expected = "Das Fahrzeug fährt auf der Straße";
+        String expected = "Das Fahrzeug fährt auf der Straße und fährt auch im Wasser!";
         assertEquals(expected, actual);
 
     }
+
     @Test
-    public void testStartCarClass() {
+    public void testStartWaterCarClass() {
         //GIVEN
-        Car testCar = new Car();
+        WaterCar testCar = new WaterCar();
         //WHEN
         String actual = testCar.start();
         //THEN
         String expected = "Car Starts";
         assertEquals(expected, actual);
+
     }
 }
